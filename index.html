@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio DILMAP | Analista & Desarrollador</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-gradient"></div>
+
+    <header class="header">
+        <div class="logo"><span class="logo-suit">♣</span> DILMAP <span class="logo-suit">♣</span></div>
+        <button class="lang-btn" id="langToggle">ES / EN</button>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-left">
+                <h1 data-i18n="hero_title">Hey, soy DILMAP, <br><span>ANALISTA & DESARROLLADOR DE SOFTWARE</span></h1>
+                <p class="hero-bio" data-i18n="hero_bio">Transformando lógica pura en soluciones visuales y arquitecturas de bases de datos robustas. Preparado para superar el siguiente nivel.</p>
+                <a href="/document/CV_Diego_Abdala.pdf" download="CV_Diego_Abdala.pdf" class="btn-cv" target="_blank" data-i18n="btn_cv">Descargar CV</a>
+            </div>
+            
+            <div class="hero-center">
+                <div class="card-fan-wrap">
+                    <div class="card-fan">
+                        <div class="fan-card">
+                            <img src="/img/Dorso-de-carta.webp" alt="Dorso carta" onerror="this.style.background='linear-gradient(135deg,#12484C,#0E2931)';this.alt=''">
+                        </div>
+                        <div class="fan-card">
+                            <img src="/img/Dorso-de-carta.webp" alt="Dorso carta" onerror="this.style.background='linear-gradient(135deg,#12484C,#0E2931)';this.alt=''">
+                        </div>
+                        <div class="fan-card">
+                            <img src="/img/Foto-perfil.webp" alt="DILMAP" onerror="this.style.background='linear-gradient(135deg,#1a5755,#0E2931)';this.alt=''">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <ul class="stats-list">
+                    <li><span class="stat-value">Lvl 20+</span><span class="stat-label" data-i18n="stat_level">Nivel</span></li>
+                    <li><span class="stat-value">100%</span><span class="stat-label" data-i18n="stat_adapt">Adaptabilidad</span></li>
+                    <li><span class="stat-value">+40%</span><span class="stat-label" data-i18n="stat_opt">Optimización SQL</span></li>
+                    <li><span class="stat-value">+150</span><span class="stat-label" data-i18n="stat_reg">Registros</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="timeline-section">
+            <h2 class="section-title" data-i18n="timeline_title">Registro de Misiones</h2>
+            <p class="section-subtitle" data-i18n="timeline_subtitle">El camino recorrido desde el nivel base hasta el presente.</p>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="suit-marker spade">♠</div>
+                    <div class="timeline-content">
+                        <h3 data-i18n="time_1_date">2025 - Presente</h3>
+                        <p data-i18n="time_1_title">Ingeniería de Sistemas</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="suit-marker diamond">♦</div>
+                    <div class="timeline-content">
+                        <h3 data-i18n="time_2_date">2024 - 2025</h3>
+                        <p data-i18n="time_2_title">Liga de Baloncesto de La Guajira | Desarrollo Visual y BD</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="suit-marker club">♣</div>
+                    <div class="timeline-content">
+                        <h3 data-i18n="time_3_date">2024</h3>
+                        <p data-i18n="time_3_title">SENA - Prácticas | FullStack Angular & NodeJS</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="suit-marker heart">♥</div>
+                    <div class="timeline-content">
+                        <h3 data-i18n="time_4_date">2022 - 2024</h3>
+                        <p data-i18n="time_4_title">Tecnólogo en Análisis y Desarrollo de Software (SENA)</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="suit-marker spade">♠</div>
+                    <div class="timeline-content">
+                        <h3 data-i18n="time_5_date">2021</h3>
+                        <p data-i18n="time_5_title">Bachiller Académico</p>
+                    </div>
+                </div>
+                <div class="timeline-line"></div>
+            </div>
+        </section>
+
+        <section class="skills-section">
+            <h2 class="section-title" data-i18n="skills_title">Atributos de Clase</h2>
+            <p class="section-subtitle" data-i18n="skills_subtitle">Las estadísticas y destrezas pasivas desbloqueadas en mi arsenal. <br><span class="highlight-text">Haz clic sobre cualquier carta para voltearla y revelar mis capacidades.</span></p>
+            
+            <div class="skills-grid">
+                <div class="skill-card rank-s" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <span class="rank-badge" data-i18n="rank_s">RANGO S</span>
+                            <img src="/img/angular-icon-svgrepo-com.svg" alt="Angular">
+                            <h4>Angular</h4>
+                        </div>
+                        <div class="card-back-reveal">
+                            <p data-i18n="skill_ang">Construcción de arquitecturas escalables, SPA robustas y maquetación estructurada con Angular CLI.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card rank-a" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <span class="rank-badge" data-i18n="rank_a">RANGO A</span>
+                            <img src="/img/html-5-svgrepo-com.svg" alt="HTML5">
+                            <h4>HTML5</h4>
+                        </div>
+                        <div class="card-back-reveal">
+                            <p data-i18n="skill_html">Estructuración semántica limpia y accesibilidad para un SEO técnico impecable.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card rank-s" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <span class="rank-badge" data-i18n="rank_s">RANGO S</span>
+                            <img src="/img/nodejs-icon-svgrepo-com.svg" alt="NodeJS">
+                            <h4>NodeJS</h4>
+                        </div>
+                        <div class="card-back-reveal">
+                            <p data-i18n="skill_node">Desarrollo de servicios Backend API REST eficientes y lógicas de servidores escalables.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card rank-b" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <span class="rank-badge" data-i18n="rank_b">RANGO B</span>
+                            <img src="/img/git-svgrepo-com.svg" alt="Git">
+                            <h4>Git</h4>
+                        </div>
+                        <div class="card-back-reveal">
+                            <p data-i18n="skill_git">Control de versiones, gestión de ramas seguras y flujos de trabajo colaborativos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card rank-a" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <span class="rank-badge" data-i18n="rank_a">RANGO A</span>
+                            <img src="/img/python-svgrepo-com.svg" alt="Python">
+                            <h4>Python</h4>
+                        </div>
+                        <div class="card-back-reveal">
+                            <p data-i18n="skill_py">Scripts automatizados, auditorías lógicas de datos y manejo estructurado de excepciones.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card rank-s" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <span class="rank-badge" data-i18n="rank_s">RANGO S</span>
+                            <img src="/img/database-svgrepo-com.svg" alt="MySQL">
+                            <h4>MySQL</h4>
+                        </div>
+                        <div class="card-back-reveal">
+                            <p data-i18n="skill_sql">Diseño relacional sólido, normalización y optimización de consultas SQL complejas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card rank-a" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <span class="rank-badge" data-i18n="rank_a">RANGO A</span>
+                            <img src="/img/javascript-svgrepo-com.svg" alt="JavaScript">
+                            <h4>JavaScript</h4>
+                        </div>
+                        <div class="card-back-reveal">
+                            <p data-i18n="skill_js">Manipulación avanzada del DOM, asincronía y desarrollo con lógica Vanilla pura.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card rank-a" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <span class="rank-badge" data-i18n="rank_a">RANGO A</span>
+                            <img src="/img/typescript-16-svgrepo-com.svg" alt="TypeScript">
+                            <h4>TypeScript</h4>
+                        </div>
+                        <div class="card-back-reveal">
+                            <p data-i18n="skill_ts">Tipado estático estricto, interfaces y programación orientada a objetos segura.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card rank-a" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <span class="rank-badge" data-i18n="rank_a">RANGO A</span>
+                            <img src="/img/css3-svgrepo-com.svg" alt="CSS3">
+                            <h4>CSS3</h4>
+                        </div>
+                        <div class="card-back-reveal">
+                            <p data-i18n="skill_css">Estilos adaptativos avanzados, Flexbox, CSS Grid y animaciones de alto rendimiento.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="extra-deck">
+            <h2 class="section-title" data-i18n="github_title">Mazo Extra</h2>
+            <p class="section-subtitle" data-i18n="github_subtitle">Explora los códigos, lógicas y reliquias directamente en mi bóveda de GitHub.</p>
+            <a href="https://github.com/Dilmap" target="_blank" class="btn-github" data-i18n="btn_github">Abrir sobre en GitHub</a>
+        </section>
+
+        <section class="reward-section">
+            <h2 class="section-title" data-i18n="reward_title">Elige tu Recompensa</h2>
+            <p class="section-subtitle" data-i18n="reward_subtitle">Voltea una carta para descubrir dónde podemos empezar nuestra próxima partida.</p>
+            <div class="cards-table">
+                <div class="interactive-card" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-front"><img src="/img/Dorso-de-carta.webp" alt="Dorso"></div>
+                        <a href="https://linkedin.com/in/dilmap" target="_blank" class="card-back-reveal"><img src="/img/linkedin-svgrepo-com.svg" alt="LinkedIn"><span>@dilmap</span></a>
+                    </div>
+                </div>
+                <div class="interactive-card" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-front"><img src="/img/Dorso-de-carta.webp" alt="Dorso"></div>
+                        <a href="https://es.fiverr.com/s/bdRo19P" target="_blank" class="card-back-reveal"><img src="/img/fiverr-svgrepo-com.svg" alt="Fiverr"><span>@dilmap</span></a>
+                    </div>
+                </div>
+                <div class="interactive-card" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-front"><img src="/img/Dorso-de-carta.webp" alt="Dorso"></div>
+                        <a href="https://www.instagram.com/dilmapdev" target="_blank" class="card-back-reveal"><img src="/img/instagram-svgrepo-com.svg" alt="Instagram"><span data-i18n="contact_direct">@dilmapdev</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>diegoabdalaflorez@gmail.com &nbsp;|&nbsp; +57 3015742661 &nbsp;|&nbsp; <span class="location" data-i18n="footer_location">Base de Operaciones: Colombia</span></p>
+            <p class="footer-copyright" data-i18n="footer_copy">&nbsp;|&nbsp Desarrollado desde cero por DILMAP © 2026.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
